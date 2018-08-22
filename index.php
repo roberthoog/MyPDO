@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Skuggan-lokal
- * Date: 2018-08-22
- * Time: 06:07
- */
-
-
 class Database extends PDO {
 
     public function __construct() {
@@ -22,12 +14,14 @@ class Database extends PDO {
             PDO::ATTR_EMULATE_PREPARES   => false,
         );
 
-
         parent::__construct($type . ':host='.$host.';dbname='.$db_name, $username, $password, $options);
     }
 }
+
+// Instantiate the db
 $db = new Database;
 
+/*
 if (isset($db)) {
     echo "<h1>Hooray</h1>";
-}
+}*/
