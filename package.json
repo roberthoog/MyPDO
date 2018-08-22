@@ -1,0 +1,31 @@
+{
+  "name": "mypdo",
+  "version": "1.0.0",
+  "description": "A PDO class I use for connecting and communicating with a MySWL database",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roberthoog/MyPDO.git"
+  },
+  "keywords": [
+    "pdo",
+    "database",
+    "default"
+  ],
+  "author": "robert hoog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roberthoog/MyPDO/issues"
+  },
+  "homepage": "https://github.com/roberthoog/MyPDO#readme"
+}

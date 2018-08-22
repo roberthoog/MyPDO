@@ -11,10 +11,11 @@ class Database extends PDO {
 
     public function __construct() {
 
+        $type ='mysql';
         $host = 'localhost';
-        $db_name = ;
-        $;
-        $;
+        $db_name ="pdo_test" ;
+        $username ="root";
+        $password ="r00t";
         $options = array(
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
@@ -22,7 +23,11 @@ class Database extends PDO {
         );
 
 
-        parent::__construct($dsn, $username, $passwd, $options);
+        parent::__construct($type . ':host='.$host.';dbname='.$db_name, $username, $password, $options);
     }
 }
 $db = new Database;
+
+if (isset($db)) {
+    echo "<h1>Hooray</h1>";
+}
