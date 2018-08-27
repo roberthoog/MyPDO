@@ -1,27 +1,22 @@
 <?php
-class Database extends PDO {
-
-    public function __construct() {
-
-        $type ='mysql';
-        $host = 'localhost';
-        $db_name ="pdo_test" ;
-        $username ="root";
-        $password ="r00t";
-        $options = array(
-            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-            PDO::ATTR_EMULATE_PREPARES   => false,
-        );
-
-        parent::__construct($type . ':host='.$host.';dbname='.$db_name, $username, $password, $options);
-    }
-}
+include_once('inc/header.php');
+?>
+    <div class="row">
+        <div class="flex-column d-flex">
+<?php
+require('inc/db-class.php');
 
 // Instantiate the db
 $db = new Database;
 
-/*
-if (isset($db)) {
-    echo "<h1>Hooray</h1>";
-}*/
+    if (isset($db)) {
+        echo "<h1>LEMMY!!!!! is ser on fire</h1>";
+        }
+    ?>
+    </div>
+</div>
+
+<?php
+
+include_once('inc/footer.php');
+?>

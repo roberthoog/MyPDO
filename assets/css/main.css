@@ -1,0 +1,19 @@
+body {
+    font-size: 16px;
+    background-color: #cce5ff;
+    width:90vw;
+    height:90vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Raleway, sans-serif!important;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Source Sans Pro'!important;
+    font-size: 1rem;
+}
