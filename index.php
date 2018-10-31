@@ -10,7 +10,7 @@ require('inc/db-class.php');
 $db = new Database;
 
     if (isset($db)) {
-        echo "<h1>LEMMY!!!!! is ser on fire</h1>";
+        echo "<h1>LEMMY!!!!! is on fire</h1>";
         }
     ?>
     </div>
